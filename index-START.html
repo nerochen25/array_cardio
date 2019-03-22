@@ -39,9 +39,7 @@
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
-    const fullNames = inventors.map(inventor => {
-      return `${inventor.first} ${inventor.last}`;
-    })
+    const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
 
     console.table(fullNames);
 
@@ -56,7 +54,9 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
-    const allYears = inventors
+    const allYears = inventors.reduce(function(acc, inventor) {
+
+    })
 
     // 5. Sort the inventors by years lived
 
